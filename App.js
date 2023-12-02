@@ -11,6 +11,7 @@ import Create from './src/Components/Cruds/Create.jsx'
 import Delete from './src/Components/Cruds/Delete.jsx'
 import Edit from './src/Components/Cruds/Edit.jsx'
 import Vista from './src/Components/Cruds/Vista.jsx'
+import EditForm from './src/Components/Cruds/EditForm.jsx';
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -24,6 +25,7 @@ export default function App() {
         <Stack.Screen name="Crear" component={Create} />
         <Stack.Screen name="Borrar" component={Delete} />
         <Stack.Screen name="Editar" component={Edit} />
+        <Stack.Screen name="Editar_Formulario" component={EditForm} />
         <Stack.Screen name="Ver" component={Vista} />
         
       </Stack.Navigator>
